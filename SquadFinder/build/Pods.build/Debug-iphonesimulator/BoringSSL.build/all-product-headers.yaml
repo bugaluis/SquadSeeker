@@ -1,0 +1,28 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/s5060140/Desktop/SquadFinder/SquadFinder/build/Debug-iphonesimulator/BoringSSL/openssl.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "openssl-Swift.h",
+          'external-contents': "/Users/s5060140/Desktop/SquadFinder/SquadFinder/build/Debug-iphonesimulator/BoringSSL/openssl.framework/Headers/openssl-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/s5060140/Desktop/SquadFinder/SquadFinder/build/Debug-iphonesimulator/BoringSSL/openssl.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/s5060140/Desktop/SquadFinder/SquadFinder/build/Pods.build/Debug-iphonesimulator/BoringSSL.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
