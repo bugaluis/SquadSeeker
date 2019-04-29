@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EA72C902277027C0050B4D0 /* TableVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA72C8F2277027C0050B4D0 /* TableVIew.swift */; };
+		5EA72C922277028D0050B4D0 /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 5EA72C912277028C0050B4D0 /* Location.gpx */; };
 		744B47352276F77B002E50B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 744B47342276F77B002E50B4 /* GoogleService-Info.plist */; };
 		74E3738522563103005AF568 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3738422563103005AF568 /* AppDelegate.swift */; };
 		74E3738722563103005AF568 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3738622563103005AF568 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5EA72C8F2277027C0050B4D0 /* TableVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableVIew.swift; sourceTree = "<group>"; };
+		5EA72C912277028C0050B4D0 /* Location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		744B47342276F77B002E50B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		74E3738122563103005AF568 /* SquadFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquadFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E3738422563103005AF568 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,9 +65,11 @@
 				74E3738422563103005AF568 /* AppDelegate.swift */,
 				74E3738622563103005AF568 /* ViewController.swift */,
 				74E37398225640F5005AF568 /* UserAnnotation.swift */,
+				5EA72C8F2277027C0050B4D0 /* TableVIew.swift */,
 				74E3738822563103005AF568 /* Main.storyboard */,
 				74E3738B22563105005AF568 /* Assets.xcassets */,
 				74E3738D22563105005AF568 /* LaunchScreen.storyboard */,
+				5EA72C912277028C0050B4D0 /* Location.gpx */,
 				74E3739022563105005AF568 /* Info.plist */,
 				744B47342276F77B002E50B4 /* GoogleService-Info.plist */,
 			);
@@ -130,6 +136,7 @@
 			files = (
 				74E3738F22563105005AF568 /* LaunchScreen.storyboard in Resources */,
 				744B47352276F77B002E50B4 /* GoogleService-Info.plist in Resources */,
+				5EA72C922277028D0050B4D0 /* Location.gpx in Resources */,
 				74E3738C22563105005AF568 /* Assets.xcassets in Resources */,
 				74E3738A22563103005AF568 /* Main.storyboard in Resources */,
 			);
@@ -143,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74E37399225640F5005AF568 /* UserAnnotation.swift in Sources */,
+				5EA72C902277027C0050B4D0 /* TableVIew.swift in Sources */,
 				74E3738722563103005AF568 /* ViewController.swift in Sources */,
 				74E3738522563103005AF568 /* AppDelegate.swift in Sources */,
 			);

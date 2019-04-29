@@ -8,6 +8,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var mapView: MKMapView!
+    
+    
     var annotations = [UserAnnotation]()
     
     override func viewDidLoad() {
@@ -21,6 +24,16 @@ class ViewController: UIViewController {
         
         watch()
     }
+    
+    func createAnnotations(snapshot: QuerySnapshot) {
+        mapView.removeAnnotations(mapView.annotations)
+        for document in snapshot.documents {
+            let annotation = UserAnnotations(document: document)
+            mapView.addAnnotation(annotation)
+        }
+    }
+    
+    
     
     func watch() {
         let ref = Firestore.firestore().collection("locations")
@@ -58,7 +71,7 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         _ = annotations[indexPath.row]
-        // this is where seques happen when you select a row if you want it to appear some where else put segue here
+        // this is where segues happen when you select a row if you want it to appear some where else put segue here
     }
     
     
