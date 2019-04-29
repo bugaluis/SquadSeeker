@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		744B47352276F77B002E50B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 744B47342276F77B002E50B4 /* GoogleService-Info.plist */; };
 		74E3738522563103005AF568 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3738422563103005AF568 /* AppDelegate.swift */; };
 		74E3738722563103005AF568 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3738622563103005AF568 /* ViewController.swift */; };
 		74E3738A22563103005AF568 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E3738822563103005AF568 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		744B47342276F77B002E50B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		74E3738122563103005AF568 /* SquadFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquadFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E3738422563103005AF568 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74E3738622563103005AF568 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				74E3738B22563105005AF568 /* Assets.xcassets */,
 				74E3738D22563105005AF568 /* LaunchScreen.storyboard */,
 				74E3739022563105005AF568 /* Info.plist */,
+				744B47342276F77B002E50B4 /* GoogleService-Info.plist */,
 			);
 			path = SquadFinder;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74E3738F22563105005AF568 /* LaunchScreen.storyboard in Resources */,
+				744B47352276F77B002E50B4 /* GoogleService-Info.plist in Resources */,
 				74E3738C22563105005AF568 /* Assets.xcassets in Resources */,
 				74E3738A22563103005AF568 /* Main.storyboard in Resources */,
 			);
