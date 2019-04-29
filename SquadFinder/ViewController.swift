@@ -28,8 +28,9 @@ class ViewController: UIViewController {
     func createAnnotations(snapshot: QuerySnapshot) {
         mapView.removeAnnotations(mapView.annotations)
         for document in snapshot.documents {
-            let annotation = UserAnnotations(document: document)
-            mapView.addAnnotation(annotation)
+            
+//            let annotation = UserAnnotation(document: document)
+//            mapView.addAnnotation(annotation)
         }
     }
     

@@ -1,0 +1,6 @@
+framework module Pods_SquadFinder {
+  umbrella header "Pods-SquadFinder-umbrella.h"
+
+  export *
+  module * { export * }
+}
