@@ -15,4 +15,4 @@ class UserAnnotation: NSObject, MKAnnotation  {
         coordinate = CLLocationCoordinate2D(latitude: geoPoint.latitude, longitude: geoPoint.longitude)
     }
     
-}
+} 
