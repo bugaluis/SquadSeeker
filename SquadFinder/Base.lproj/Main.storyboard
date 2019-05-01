@@ -50,6 +50,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="62f-PZ-r7N"/>
                     <connections>
+                        <outlet property="filter" destination="euN-mF-1kn" id="cY4-hJ-kgt"/>
+                        <outlet property="mapVIew" destination="mKx-cK-vCk" id="zlP-L6-JHn"/>
+                        <outlet property="showAll" destination="hOi-be-b43" id="LQd-Xp-aRo"/>
+                        <outlet property="slogan" destination="J2Y-ZY-ddm" id="aRs-nQ-JUQ"/>
                         <segue destination="sR4-Ag-gQt" kind="show" id="2Ua-vc-ITd"/>
                     </connections>
                 </viewController>
@@ -78,7 +82,7 @@
         <!--View Controller-->
         <scene sceneID="uJM-id-sbL">
             <objects>
-                <viewController id="sR4-Ag-gQt" customClass="ViewController" customModule="Buddy_Watch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sR4-Ag-gQt" customClass="ViewController" customModule="SquadFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iyb-9Y-4y2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
