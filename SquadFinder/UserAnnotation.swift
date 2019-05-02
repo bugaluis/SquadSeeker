@@ -5,9 +5,6 @@ class UserAnnotation: NSObject, MKAnnotation  {
     
     var coordinate: CLLocationCoordinate2D
     
-    var text: String {
-        return "\(coordinate.latitude) - \(coordinate.longitude)"
-    }
     
     init(document: DocumentSnapshot) {
         let dict = document.data()!

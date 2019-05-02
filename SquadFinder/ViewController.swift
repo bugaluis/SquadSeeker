@@ -5,62 +5,54 @@ import Firebase
 class ViewController: UIViewController {
     
     let locationManager = CLLocationManager()
-    
-    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var mapView: MKMapView!
-    
     
     @IBOutlet weak var slogan: UILabel!
     @IBOutlet weak var showAll: UIButton!
     @IBOutlet weak var filter: UIButton!
-    
-    var annotations = [UserAnnotation]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.requestAlwaysAuthorization()
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        
         watch()
     }
     
+    //add user annotations
     func createAnnotations(snapshot: QuerySnapshot) {
         mapView.removeAnnotations(mapView.annotations)
         for document in snapshot.documents {
-            
-//            let annotation = UserAnnotation(document: document)
-//            mapView.addAnnotation(annotation)
+            let annotation = UserAnnotation(document: document)
+            mapView.addAnnotation(annotation)
         }
     }
-    
-    
     
     func watch() {
         let ref = Firestore.firestore().collection("locations")
-        ref.getDocuments { snapshot, error in
-            for document in snapshot!.documents {
-                let annotations = UserAnnotation(document: document)
-                self.annotations.append(annotations)
-                self.tableView.reloadData()
-                
-                
-                
-            }
+        ref.addSnapshotListener { snapshot, error in
+            self.createAnnotations(snapshot: snapshot!)
+            
         }
     }
     
-    
     func save(location: CLLocation) {
-        let ref = Firestore.firestore().collection("locations").document("G")
+        let ref = Firestore.firestore().collection("locations").document("NAME")
         let geoPoint = GeoPoint(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
         ref.setData(["location": geoPoint])
     }
     
 }
+
+//button func reset() {
+//    remove annotations
+//mapView.addAnnotation(annotation)
+//}
+
+//fbutton unc filterSearch() {
+//    if statement
+//
+//}
 
 extension ViewController:CLLocationManagerDelegate {
     
@@ -69,35 +61,6 @@ extension ViewController:CLLocationManagerDelegate {
     }
     
 }
-
-extension ViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        _ = annotations[indexPath.row]
-        // this is where segues happen when you select a row if you want it to appear some where else put segue here
-    }
-    
-    
-}
-
-extension ViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return annotations.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
-        UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-            let annotationForCell = annotations[indexPath.row]
-            cell.textLabel?.text = annotationForCell.text
-            return cell
-            
-            
-    }
-    
-    
-    
-}
-
+// ask Kyle about getting the firebase users to appear on the map
+// download locations, segues and regions project
 
