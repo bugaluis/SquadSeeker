@@ -64,10 +64,34 @@
                         <viewLayoutGuide key="safeArea" id="Kcu-dZ-ClV"/>
                     </view>
                     <navigationItem key="navigationItem" id="rR3-ff-5Cj"/>
+                    <connections>
+                        <segue destination="sDT-cr-thg" kind="show" id="W06-KI-g4k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmI-bR-YVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="521" y="142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Thy-Cm-kIN">
+            <objects>
+                <viewController id="sDT-cr-thg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ifh-hh-iwI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JpO-CL-w5a">
+                                <rect key="frame" x="0.0" y="64" width="295" height="382"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nZX-OJ-1q9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qp6-NY-rMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1296.8" y="141.67916041979012"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Y6Z-Lf-LgJ">
