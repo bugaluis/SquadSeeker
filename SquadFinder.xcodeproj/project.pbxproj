@@ -17,7 +17,7 @@
 		74E3738C22563105005AF568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E3738B22563105005AF568 /* Assets.xcassets */; };
 		74E3738F22563105005AF568 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E3738D22563105005AF568 /* LaunchScreen.storyboard */; };
 		74E37399225640F5005AF568 /* UserAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E37398225640F5005AF568 /* UserAnnotation.swift */; };
-		74FE69E72279FCB1002F25D0 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FE69E62279FCB1002F25D0 /* UserLogin.swift */; };
+		74FE69E72279FCB1002F25D0 /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FE69E62279FCB1002F25D0 /* UserLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		74E3738E22563105005AF568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74E3739022563105005AF568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74E37398225640F5005AF568 /* UserAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnotation.swift; sourceTree = "<group>"; };
-		74FE69E62279FCB1002F25D0 /* UserLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
+		74FE69E62279FCB1002F25D0 /* UserLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
 		9E5D2221CF50E23318A72D15 /* Pods-SquadFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquadFinder/Pods-SquadFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		E74EBF7942DCD2F083FA4FE1 /* Pods_SquadFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquadFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				74E3738422563103005AF568 /* AppDelegate.swift */,
-				74FE69E62279FCB1002F25D0 /* UserLogin.swift */,
+				74FE69E62279FCB1002F25D0 /* UserLoginViewController.swift */,
 				5E84019D2281D066000B2F24 /* UserVC.swift */,
 				74E3738622563103005AF568 /* ViewController.swift */,
 				74E37398225640F5005AF568 /* UserAnnotation.swift */,
@@ -242,7 +242,7 @@
 				74E37399225640F5005AF568 /* UserAnnotation.swift in Sources */,
 				5E84019E2281D066000B2F24 /* UserVC.swift in Sources */,
 				74E3738722563103005AF568 /* ViewController.swift in Sources */,
-				74FE69E72279FCB1002F25D0 /* UserLogin.swift in Sources */,
+				74FE69E72279FCB1002F25D0 /* UserLoginViewController.swift in Sources */,
 				74E3738522563103005AF568 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

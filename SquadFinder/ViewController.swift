@@ -1,6 +1,7 @@
 import UIKit
 import MapKit
 import Firebase
+import FirebaseAuth
 
 class ViewController: UIViewController {
     
@@ -16,8 +17,6 @@ class ViewController: UIViewController {
     
     var userUid: String!
     
-   
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.requestAlwaysAuthorization()
@@ -30,39 +29,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resource that can be recreated.
     }
-    
-    func goToCreateUserVC() {
-        performSegue(withIdentifier: "SignUp", sender: nil)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "SignUp" {
-            if let destination = segue.destination as? UserVC {
-                if userUid != nil {
-                    destination.userUid = userUid
-                }
-                if emailField.text != nil {
-                    destination.emailField = emailField.text
-                }
-                if passwordField.text != nil {
-                    destination.passwordField = passwordField.text
-                }
-            }
-    @IBAction func signInTapped(_ sender: Any){
-        if let email = emailField.text, let password = passwordField.text {
-            FirebaseApp.Auth()?.signIn(withEmail: email, password: password, completion:
-                { (user,error) in
-                    if error == nil {
-                        if let user = user {
-                            self.userUid = user.uid
-                            self.goToCreateUserVC()
-                        }
-                    } else {
-                        self.goToCreateUserVC()
-                    }
-            });
-        }
-    }
+
     
     //add user annotations
     func createAnnotations(documents: [DocumentSnapshot]) {
@@ -105,6 +72,5 @@ extension ViewController:CLLocationManagerDelegate {
     }
     
 }
-// ask Kyle about getting the firebase users to appear on the map
-// download locations, segues and regions project
+
 

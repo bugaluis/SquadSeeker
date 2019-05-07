@@ -9,76 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SquadFinder" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mKx-cK-vCk">
-                                <rect key="frame" x="16" y="79" width="343" height="547"/>
-                            </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEEK FOR TEAMMATES NOW!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2Y-ZY-ddm">
-                                <rect key="frame" x="16" y="55" width="343" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="QAj-vc-9Rr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="29"/>
-                                <color key="textColor" red="0.051760552979999999" green="1" blue="0.67383334029999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euN-mF-1kn">
-                                <rect key="frame" x="40" y="622" width="107" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="107" id="LBs-DM-cwp"/>
-                                    <constraint firstAttribute="height" constant="45" id="zLX-4g-tpO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="23"/>
-                                <state key="normal" title="FILTER SEARCH">
-                                    <color key="titleColor" red="0.051760552979861929" green="1" blue="0.67383334025123309" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOi-be-b43">
-                                <rect key="frame" x="186" y="622" width="173" height="45"/>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="23"/>
-                                <state key="normal" title="SHOW ALL RESULTS">
-                                    <color key="titleColor" red="0.051760552979999999" green="1" blue="0.67383334029999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.062745098039215685" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="euN-mF-1kn" firstAttribute="top" secondItem="hOi-be-b43" secondAttribute="top" id="17i-XN-WAL"/>
-                            <constraint firstItem="euN-mF-1kn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="1lT-rl-SWX"/>
-                            <constraint firstItem="mKx-cK-vCk" firstAttribute="trailing" secondItem="hOi-be-b43" secondAttribute="trailing" id="A30-CA-wRI"/>
-                            <constraint firstItem="J2Y-ZY-ddm" firstAttribute="trailing" secondItem="mKx-cK-vCk" secondAttribute="trailing" id="DWf-2j-JId"/>
-                            <constraint firstItem="hOi-be-b43" firstAttribute="leading" secondItem="euN-mF-1kn" secondAttribute="trailing" constant="39" id="IId-Ww-5o0"/>
-                            <constraint firstItem="euN-mF-1kn" firstAttribute="baseline" secondItem="hOi-be-b43" secondAttribute="firstBaseline" id="N5b-iu-h5d"/>
-                            <constraint firstItem="J2Y-ZY-ddm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-9" id="RFO-PK-lIm"/>
-                            <constraint firstItem="J2Y-ZY-ddm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="UTh-YB-vzg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mKx-cK-vCk" secondAttribute="bottom" constant="41" id="buw-dO-deP"/>
-                            <constraint firstItem="euN-mF-1kn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eTP-hR-stl"/>
-                            <constraint firstItem="J2Y-ZY-ddm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pas-8d-uBd"/>
-                            <constraint firstItem="J2Y-ZY-ddm" firstAttribute="leading" secondItem="mKx-cK-vCk" secondAttribute="leading" id="s4j-2m-c4i"/>
-                            <constraint firstItem="mKx-cK-vCk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="u55-Ro-z6A"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="62f-PZ-r7N"/>
-                    <connections>
-                        <outlet property="filter" destination="euN-mF-1kn" id="cY4-hJ-kgt"/>
-                        <outlet property="mapView" destination="mKx-cK-vCk" id="uiu-Vu-7a1"/>
-                        <outlet property="showAll" destination="hOi-be-b43" id="LQd-Xp-aRo"/>
-                        <outlet property="slogan" destination="J2Y-ZY-ddm" id="aRs-nQ-JUQ"/>
-                        <segue destination="t7V-ec-OiW" kind="show" id="u68-Rf-PSi"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1324" y="142"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="w2v-8B-hMm">
             <objects>
@@ -90,7 +20,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aUf-I8-US8"/>
+                        <segue destination="K66-Bm-20V" kind="relationship" relationship="rootViewController" id="2GB-yP-osX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qz9-hp-FoD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -133,10 +63,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Kcu-dZ-ClV"/>
                     </view>
+                    <navigationItem key="navigationItem" id="rR3-ff-5Cj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmI-bR-YVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="934" y="-525"/>
+            <point key="canvasLocation" x="521" y="142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Y6Z-Lf-LgJ">
