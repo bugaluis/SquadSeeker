@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/s5109289/Desktop/SquadSeeker/SquadFinder/UserVC.swift">
+   </FileRef>
+   <FileRef
       location = "group:SquadFinder.xcodeproj">
    </FileRef>
    <FileRef
