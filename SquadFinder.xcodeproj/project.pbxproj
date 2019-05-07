@@ -10,7 +10,6 @@
 		5EA72C922277028D0050B4D0 /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 5EA72C912277028C0050B4D0 /* Location.gpx */; };
 		71F74B0A60BF687B36DF5151 /* Pods_SquadFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74EBF7942DCD2F083FA4FE1 /* Pods_SquadFinder.framework */; };
 		744B47352276F77B002E50B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 744B47342276F77B002E50B4 /* GoogleService-Info.plist */; };
-		746F0E922281B0ED00DB4190 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746F0E912281B0ED00DB4190 /* CustomAnnotationView.swift */; };
 		746F0E942281BFE100DB4190 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746F0E932281BFE100DB4190 /* ImagePicker.swift */; };
 		74E3738522563103005AF568 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3738422563103005AF568 /* AppDelegate.swift */; };
 		74E3738722563103005AF568 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3738622563103005AF568 /* ViewController.swift */; };
@@ -25,7 +24,6 @@
 		400BB7272891E6F31F82D8A8 /* Pods-SquadFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquadFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquadFinder/Pods-SquadFinder.release.xcconfig"; sourceTree = "<group>"; };
 		5EA72C912277028C0050B4D0 /* Location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		744B47342276F77B002E50B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		746F0E912281B0ED00DB4190 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomAnnotationView.swift; path = "../../../../../Volumes/NEW REC/SquadSeeker-master/SquadFinder/CustomAnnotationView.swift"; sourceTree = "<group>"; };
 		746F0E932281BFE100DB4190 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		74E3738122563103005AF568 /* SquadFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquadFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E3738422563103005AF568 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 				74FE69E62279FCB1002F25D0 /* UserLogin.swift */,
 				74E3738622563103005AF568 /* ViewController.swift */,
 				74E37398225640F5005AF568 /* UserAnnotation.swift */,
-				746F0E912281B0ED00DB4190 /* CustomAnnotationView.swift */,
 				746F0E932281BFE100DB4190 /* ImagePicker.swift */,
 				74E3738822563103005AF568 /* Main.storyboard */,
 				74E3738B22563105005AF568 /* Assets.xcassets */,
@@ -243,7 +240,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				74E37399225640F5005AF568 /* UserAnnotation.swift in Sources */,
-				746F0E922281B0ED00DB4190 /* CustomAnnotationView.swift in Sources */,
 				74E3738722563103005AF568 /* ViewController.swift in Sources */,
 				746F0E942281BFE100DB4190 /* ImagePicker.swift in Sources */,
 				74FE69E72279FCB1002F25D0 /* UserLogin.swift in Sources */,

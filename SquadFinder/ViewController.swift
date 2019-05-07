@@ -43,7 +43,6 @@ class ViewController: UIViewController {
     }
     
 }
-
 //button func reset() {
 //    remove annotations
 //mapView.addAnnotation(annotation)
@@ -58,6 +57,8 @@ extension ViewController:CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         save(location: locations.last!)
+        
+        
     }
     
 }
