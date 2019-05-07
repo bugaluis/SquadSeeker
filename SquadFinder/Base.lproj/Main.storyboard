@@ -74,7 +74,8 @@
                         <outlet property="login" destination="pbP-z2-9od" id="JjR-qh-rlG"/>
                         <outlet property="passwordTextField" destination="8RV-nN-6Jz" id="x8E-tt-Ma4"/>
                         <outlet property="title" destination="aSR-AV-1SL" id="h4S-dz-xJf"/>
-                        <segue destination="sDT-cr-thg" kind="show" id="W06-KI-g4k"/>
+                        <outlet property="titleMain" destination="aSR-AV-1SL" id="HKj-Ws-t68"/>
+                        <segue destination="sDT-cr-thg" kind="show" identifier="SignUp" id="W06-KI-g4k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmI-bR-YVI" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -34,10 +34,10 @@ class ViewController: UIViewController {
     
     //add user annotations
     func createAnnotations(documents: [DocumentSnapshot]) {
-        mapView.removeAnnotations(mapView.annotations)
+        mapview.removeAnnotations(mapview.annotations)
         for document in documents {
             let annotation = UserAnnotation(document: document)
-            mapView.addAnnotation(annotation)
+            mapview.addAnnotation(annotation)
         }
     }
     func watch() {
