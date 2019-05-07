@@ -18,8 +18,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mKx-cK-vCk">
-                                <rect key="frame" x="16" y="39" width="343" height="599"/>
+                                <rect key="frame" x="16" y="35" width="343" height="591"/>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEEK FOR TEAMMATES NOW!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2Y-ZY-ddm">
+                                <rect key="frame" x="16" y="11" width="343" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="QAj-vc-9Rr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="29"/>
+                                <color key="textColor" red="0.051760552979999999" green="1" blue="0.67383334029999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euN-mF-1kn">
+                                <rect key="frame" x="40" y="622" width="107" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="LBs-DM-cwp"/>
+                                    <constraint firstAttribute="height" constant="45" id="zLX-4g-tpO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="23"/>
+                                <state key="normal" title="FILTER SEARCH">
+                                    <color key="titleColor" red="0.051760552979861929" green="1" blue="0.67383334025123309" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOi-be-b43">
                                 <rect key="frame" x="186" y="622" width="173" height="45"/>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="23"/>
@@ -27,42 +47,22 @@
                                     <color key="titleColor" red="0.051760552979999999" green="1" blue="0.67383334029999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEEK FOR TEAMMATES NOW!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2Y-ZY-ddm">
-                                <rect key="frame" x="16" y="20" width="343" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="EVZ-TU-kYw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="29"/>
-                                <color key="textColor" red="0.051760552979999999" green="1" blue="0.67383334029999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euN-mF-1kn">
-                                <rect key="frame" x="16" y="622" width="173" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="LxO-1T-msE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="23"/>
-                                <state key="normal" title="FILTER SEARCH">
-                                    <color key="titleColor" red="0.051760552979861929" green="1" blue="0.67383334025123309" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.05690982123571528" blue="0.14586706606217614" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0" green="0.062745098039215685" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mKx-cK-vCk" firstAttribute="leading" secondItem="euN-mF-1kn" secondAttribute="leading" id="4RM-85-6Ve"/>
-                            <constraint firstItem="J2Y-ZY-ddm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Axc-8e-QJb"/>
-                            <constraint firstItem="euN-mF-1kn" firstAttribute="top" secondItem="hOi-be-b43" secondAttribute="top" id="QHH-7p-BUg"/>
-                            <constraint firstItem="mKx-cK-vCk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="XDq-dN-VnM"/>
-                            <constraint firstItem="J2Y-ZY-ddm" firstAttribute="trailing" secondItem="mKx-cK-vCk" secondAttribute="trailing" id="avb-aZ-1GZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="euN-mF-1kn" secondAttribute="trailing" constant="186" id="bZ3-5v-ogy"/>
-                            <constraint firstItem="J2Y-ZY-ddm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iiK-Rj-Ht0"/>
-                            <constraint firstItem="hOi-be-b43" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="186" id="j5J-yh-3XH"/>
-                            <constraint firstItem="J2Y-ZY-ddm" firstAttribute="leading" secondItem="mKx-cK-vCk" secondAttribute="leading" id="miQ-YV-by6"/>
-                            <constraint firstItem="euN-mF-1kn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nEs-W7-QJC"/>
-                            <constraint firstItem="J2Y-ZY-ddm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qsb-OP-6Co"/>
-                            <constraint firstItem="euN-mF-1kn" firstAttribute="baseline" secondItem="hOi-be-b43" secondAttribute="firstBaseline" id="thM-ZI-74d"/>
-                            <constraint firstItem="mKx-cK-vCk" firstAttribute="trailing" secondItem="hOi-be-b43" secondAttribute="trailing" id="uk5-ka-knC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mKx-cK-vCk" secondAttribute="bottom" constant="29" id="y0s-Qv-R8Q"/>
+                            <constraint firstItem="euN-mF-1kn" firstAttribute="top" secondItem="hOi-be-b43" secondAttribute="top" id="17i-XN-WAL"/>
+                            <constraint firstItem="euN-mF-1kn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="1lT-rl-SWX"/>
+                            <constraint firstItem="mKx-cK-vCk" firstAttribute="trailing" secondItem="hOi-be-b43" secondAttribute="trailing" id="A30-CA-wRI"/>
+                            <constraint firstItem="J2Y-ZY-ddm" firstAttribute="trailing" secondItem="mKx-cK-vCk" secondAttribute="trailing" id="DWf-2j-JId"/>
+                            <constraint firstItem="hOi-be-b43" firstAttribute="leading" secondItem="euN-mF-1kn" secondAttribute="trailing" constant="39" id="IId-Ww-5o0"/>
+                            <constraint firstItem="euN-mF-1kn" firstAttribute="baseline" secondItem="hOi-be-b43" secondAttribute="firstBaseline" id="N5b-iu-h5d"/>
+                            <constraint firstItem="J2Y-ZY-ddm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-9" id="RFO-PK-lIm"/>
+                            <constraint firstItem="J2Y-ZY-ddm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="UTh-YB-vzg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mKx-cK-vCk" secondAttribute="bottom" constant="41" id="buw-dO-deP"/>
+                            <constraint firstItem="euN-mF-1kn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eTP-hR-stl"/>
+                            <constraint firstItem="J2Y-ZY-ddm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pas-8d-uBd"/>
+                            <constraint firstItem="J2Y-ZY-ddm" firstAttribute="leading" secondItem="mKx-cK-vCk" secondAttribute="leading" id="s4j-2m-c4i"/>
+                            <constraint firstItem="mKx-cK-vCk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="u55-Ro-z6A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -72,16 +72,17 @@
                         <outlet property="mapView" destination="mKx-cK-vCk" id="uiu-Vu-7a1"/>
                         <outlet property="showAll" destination="hOi-be-b43" id="LQd-Xp-aRo"/>
                         <outlet property="slogan" destination="J2Y-ZY-ddm" id="aRs-nQ-JUQ"/>
-                        <segue destination="t7V-ec-OiW" kind="show" id="kjd-9n-hr0"/>
+                        <segue destination="t7V-ec-OiW" kind="show" id="u68-Rf-PSi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1276" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1324" y="142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="w2v-8B-hMm">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qz9-hp-FoD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZzQ-Fm-YQR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fXX-5U-jdu">
@@ -93,7 +94,6 @@
                         <segue destination="BYZ-38-t0r" kind="show" id="jMs-rz-jDU"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qz9-hp-FoD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="452" y="142"/>
         </scene>
@@ -136,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmI-bR-YVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-359" y="142"/>
+            <point key="canvasLocation" x="2582" y="1129"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Y6Z-Lf-LgJ">
@@ -207,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEn-8c-lPZ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2026" y="134"/>
+            <point key="canvasLocation" x="2151" y="142"/>
         </scene>
     </scenes>
 </document>
