@@ -7,14 +7,31 @@ class ViewController: UIViewController {
     
     let locationManager = CLLocationManager()
     
-    @IBOutlet weak var mapView: MKMapView!
+    
+    
     @IBOutlet weak var slogan: UILabel!
-    @IBOutlet weak var showAll: UIButton!
-    @IBOutlet weak var filter: UIButton!
+    @IBOutlet weak var mapview: MKMapView!
     
-    @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
     
+    @IBAction func filter(_ sender: UIButton) {
+    }
+    @IBAction func showAll(_ sender: UIButton) {
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+//    @IBOutlet weak var emailField: UITextField!
+//    @IBOutlet weak var passwordField: UITextField!
+//
     var userUid: String!
     
     override func viewDidLoad() {
