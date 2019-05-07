@@ -18,22 +18,6 @@ class ViewController: UIViewController {
     @IBAction func showAll(_ sender: UIButton) {
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-//    @IBOutlet weak var emailField: UITextField!
-//    @IBOutlet weak var passwordField: UITextField!
-//
-    var userUid: String!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.requestAlwaysAuthorization()

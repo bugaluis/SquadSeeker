@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class UserLoginVC: UIViewController {
+class LoginViewController: UIViewController {
 
 
 
