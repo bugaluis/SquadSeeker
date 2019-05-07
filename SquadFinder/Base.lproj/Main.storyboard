@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mKx-cK-vCk">
-                                <rect key="frame" x="16" y="35" width="343" height="591"/>
+                                <rect key="frame" x="16" y="79" width="343" height="547"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEEK FOR TEAMMATES NOW!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2Y-ZY-ddm">
-                                <rect key="frame" x="16" y="11" width="343" height="35"/>
+                                <rect key="frame" x="16" y="55" width="343" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="QAj-vc-9Rr"/>
                                 </constraints>
@@ -90,12 +90,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="jMs-rz-jDU"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aUf-I8-US8"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qz9-hp-FoD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452" y="142"/>
+            <point key="canvasLocation" x="223" y="142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ypy-oE-0ji">

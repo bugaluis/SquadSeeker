@@ -20,9 +20,9 @@ class ViewController: UIViewController {
     }
     
     //add user annotations
-    func createAnnotations(snapshot: QuerySnapshot) {
+    func createAnnotations(documents: [DocumentSnapshot]) {
         mapView.removeAnnotations(mapView.annotations)
-        for document in snapshot.documents {
+        for document in documents {
             let annotation = UserAnnotation(document: document)
             mapView.addAnnotation(annotation)
         }
@@ -31,8 +31,7 @@ class ViewController: UIViewController {
     func watch() {
         let ref = Firestore.firestore().collection("locations")
         ref.addSnapshotListener { snapshot, error in
-            self.createAnnotations(snapshot: snapshot!)
-            
+            self.createAnnotations(documents: snapshot!.documents)
         }
     }
     
