@@ -6,119 +6,62 @@ class ViewController: UIViewController {
     
     let locationManager = CLLocationManager()
     
-    @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var slogan: UILabel!
+    @IBOutlet weak var showAll: UIButton!
+    @IBOutlet weak var filter: UIButton!
     
-    var userUid: String!
-    
-    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        locationManager.requestAlwaysAuthorization()
-//        locationManager.delegate = self as! CLLocationManagerDelegate
-//        locationManager.startUpdatingLocation()
-//        watch()
-//    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-            // Dispose of any resource that can be recreated.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        locationManager.requestAlwaysAuthorization()
+        locationManager.delegate = self
+        locationManager.startUpdatingLocation()
+        watch()
     }
     
-    
-    
-    func goToCreateUserVC() {
-        performSegue(withIdentifier: "SignUp", sender: nil)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "SignUp" {
-            if let destination = segue.destination as? UserVC {
-            if userUid != nil {
-                destination.userUid = userUid
-                }
-                if emailField.text != nil {
-                    destination.emailField = emailField.text
-                }
-                if passwordField.text != nil {
-                    destination.passwordField = passwordField.text
-                }
-            }
+    //add user annotations
+    func createAnnotations(snapshot: QuerySnapshot) {
+        mapView.removeAnnotations(mapView.annotations)
+        for document in snapshot.documents {
+            let annotation = UserAnnotation(document: document)
+            mapView.addAnnotation(annotation)
         }
     }
     
-    
-    
-    
-    
-    
-    @IBAction func signInTapped(_ sender: Any){
-        if let email = emailField.text, let password = passwordField.text {
-            FirebaseApp.Auth()?.signIn(withEmail: email, password: password, completion:
-                { (user,error) in
-                    if error == nil {
-                        if let user = user {
-                            self.userUid = user.uid
-                            self.goToCreateUserVC()
-                        }
-                    } else {
-                       self.goToCreateUserVC()
-                    }
-                    });
+    func watch() {
+        let ref = Firestore.firestore().collection("locations")
+        ref.addSnapshotListener { snapshot, error in
+            self.createAnnotations(snapshot: snapshot!)
+            
         }
     }
-
+    
+    func save(location: CLLocation) {
+        let ref = Firestore.firestore().collection("locations").document("NAME")
+        let geoPoint = GeoPoint(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        ref.setData(["location": geoPoint])
+    }
+    
 }
-    
-    
-    
-    
-    
-    
-    
-//    //add user annotations
-//    func createAnnotations(snapshot: QuerySnapshot) {
-//        mapView.removeAnnotations(mapView.annotations)
-//        for document in snapshot.documents {
-//            let annotation = UserAnnotation(document: document)
-//            mapView.addAnnotation(annotation)
-//        }
-//    }
-//
-//    func watch() {
-//        let ref = Firestore.firestore().collection("locations")
-//        ref.addSnapshotListener { snapshot, error in
-//            self.createAnnotations(snapshot: snapshot!)
-//
-//        }
-//    }
-//
-//    func save(location: CLLocation) {
-//        let ref = Firestore.firestore().collection("locations").document("NAME")
-//        let geoPoint = GeoPoint(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-//        ref.setData(["location": geoPoint])
-//    }
+//button func reset() {
+//    remove annotations
+//mapView.addAnnotation(annotation)
+//}
+
+//fbutton unc filterSearch() {
+//    if statement
 //
 //}
-//
-////button func reset() {
-////    remove annotations
-////mapView.addAnnotation(annotation)
-////}
-//
-////fbutton unc filterSearch() {
-////    if statement
-////
-////}
-//
-//extension ViewController:CLLocationManagerDelegate {
-//
-//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//        save(location: locations.last!)
-//    }
-//
-//}
-//// ask Kyle about getting the firebase users to appear on the map
-//// download locations, segues and regions project
-//
-//
+
+extension ViewController:CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        save(location: locations.last!)
+        
+        
+    }
+    
+}
+// ask Kyle about getting the firebase users to appear on the map
+// download locations, segues and regions project
+
