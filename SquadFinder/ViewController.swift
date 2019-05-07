@@ -31,8 +31,6 @@ class ViewController: UIViewController {
         // Dispose of any resource that can be recreated.
     }
     
-    
-    
     func goToCreateUserVC() {
         performSegue(withIdentifier: "SignUp", sender: nil)
     }
@@ -50,9 +48,6 @@ class ViewController: UIViewController {
                     destination.passwordField = passwordField.text
                 }
             }
-   
-    
-    
     @IBAction func signInTapped(_ sender: Any){
         if let email = emailField.text, let password = passwordField.text {
             FirebaseApp.Auth()?.signIn(withEmail: email, password: password, completion:
@@ -69,13 +64,6 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    
-    
-    
-    
-    
-    
     //add user annotations
     func createAnnotations(documents: [DocumentSnapshot]) {
         mapView.removeAnnotations(mapView.annotations)
@@ -84,7 +72,6 @@ class ViewController: UIViewController {
             mapView.addAnnotation(annotation)
         }
     }
-    
     func watch() {
         let ref = Firestore.firestore().collection("locations")
         ref.addSnapshotListener { snapshot, error in

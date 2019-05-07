@@ -1,10 +1,3 @@
-//
-//  UserVC.swift
-//
-//
-//  Created by Luis Burga Mideros (s5109289) on 07/05/2019.
-//
-
 import UIKit
 
 class UserVC: UIViewController {
