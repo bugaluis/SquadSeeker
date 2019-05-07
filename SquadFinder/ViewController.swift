@@ -5,6 +5,7 @@ import Firebase
 class ViewController: UIViewController {
     
     let locationManager = CLLocationManager()
+    
     @IBOutlet weak var mapView: MKMapView!
     
     @IBOutlet weak var slogan: UILabel!
