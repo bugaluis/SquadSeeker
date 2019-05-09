@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  SquadFinder
-//
-//  Created by George Wilshaw (s5060140) on 04/04/2019.
-//  Copyright © 2019 George Wilshaw (s5060140). All rights reserved.
-//
-
 import UIKit
 import Firebase
 

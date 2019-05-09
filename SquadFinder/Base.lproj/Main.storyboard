@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZzQ-Fm-YQR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZzQ-Fm-YQR">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -90,36 +90,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JpO-CL-w5a">
-                                <rect key="frame" x="40" y="98" width="295" height="382"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JpO-CL-w5a">
+                                <rect key="frame" x="40" y="98" width="295" height="513"/>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seek for Teamates Now!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTn-hu-MEW">
-                                <rect key="frame" x="16" y="64" width="343" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.13635238939943106" green="0.88655653470952422" blue="0.88979469864370619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kw9-RK-a24">
-                                <rect key="frame" x="40" y="610" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kw9-RK-a24">
+                                <rect key="frame" x="54" y="613" width="99" height="35"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="23"/>
                                 <state key="normal" title="Filter Results!"/>
+                                <connections>
+                                    <action selector="filter:" destination="sDT-cr-thg" eventType="touchUpInside" id="liS-ug-Ne5"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w13-Wn-8XT">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w13-Wn-8XT">
                                 <rect key="frame" x="246" y="610" width="104" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2P-VJ-hrW">
-                                <rect key="frame" x="261" y="610" width="64" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEx-ej-M6D">
+                                <rect key="frame" x="101" y="64" width="173" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="vXA-rc-2Wl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="23"/>
+                                <state key="normal" title="SEEK TEAMATES NOW!">
+                                    <color key="titleColor" red="0.051760552979999999" green="1" blue="0.67383334029999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2P-VJ-hrW">
+                                <rect key="frame" x="246" y="613" width="67" height="35"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="23"/>
                                 <state key="normal" title="Show All!"/>
+                                <connections>
+                                    <action selector="showAll:" destination="sDT-cr-thg" eventType="touchUpInside" id="dEO-g6-CcX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.062745098039215685" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kw9-RK-a24" firstAttribute="baseline" secondItem="v2P-VJ-hrW" secondAttribute="baseline" id="LaI-DC-Ej4"/>
+                            <constraint firstItem="JpO-CL-w5a" firstAttribute="top" secondItem="nZX-OJ-1q9" secondAttribute="top" constant="34" id="UHw-Sm-yGE"/>
+                            <constraint firstItem="NEx-ej-M6D" firstAttribute="centerX" secondItem="ifh-hh-iwI" secondAttribute="centerX" id="UOg-qy-d06"/>
+                            <constraint firstItem="kw9-RK-a24" firstAttribute="top" secondItem="JpO-CL-w5a" secondAttribute="bottom" constant="2" id="Wby-ck-qyx"/>
+                            <constraint firstItem="NEx-ej-M6D" firstAttribute="top" secondItem="nZX-OJ-1q9" secondAttribute="top" id="eIP-Mq-f0j"/>
+                            <constraint firstItem="NEx-ej-M6D" firstAttribute="centerX" secondItem="JpO-CL-w5a" secondAttribute="centerX" id="ffi-br-BSu"/>
+                            <constraint firstItem="v2P-VJ-hrW" firstAttribute="leading" secondItem="w13-Wn-8XT" secondAttribute="leading" id="gfB-MY-B9J"/>
+                            <constraint firstItem="JpO-CL-w5a" firstAttribute="leading" secondItem="nZX-OJ-1q9" secondAttribute="leading" constant="40" id="iSb-aj-d24"/>
+                            <constraint firstItem="kw9-RK-a24" firstAttribute="leading" secondItem="nZX-OJ-1q9" secondAttribute="leading" constant="54" id="l9Y-q0-zm6"/>
+                            <constraint firstItem="w13-Wn-8XT" firstAttribute="leading" secondItem="kw9-RK-a24" secondAttribute="trailing" constant="93" id="lEf-XE-C5R"/>
+                            <constraint firstItem="nZX-OJ-1q9" firstAttribute="bottom" secondItem="kw9-RK-a24" secondAttribute="bottom" constant="19" id="tjk-NA-Xkx"/>
+                            <constraint firstItem="NEx-ej-M6D" firstAttribute="leading" secondItem="nZX-OJ-1q9" secondAttribute="leading" constant="101" id="vO7-52-zYK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nZX-OJ-1q9"/>
                     </view>
                     <connections>
+                        <outlet property="mapView" destination="JpO-CL-w5a" id="AYt-g1-j25"/>
                         <segue destination="t7V-ec-OiW" kind="show" id="Xgo-nE-HJN"/>
                     </connections>
                 </viewController>
@@ -175,7 +197,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tx0-4U-olM">
-                                <rect key="frame" x="186" y="545" width="189" height="122"/>
+                                <rect key="frame" x="186" y="545" width="189" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
