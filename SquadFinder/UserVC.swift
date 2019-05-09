@@ -6,11 +6,14 @@ class UserVC: UIViewController {
     var emailTextField: String!
     var passwordTextField: String!
     
-    
+    var annotation: UserAnnotation!
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
     }
     
