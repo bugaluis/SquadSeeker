@@ -54,7 +54,13 @@ class ViewController: UIViewController {
         ref.setData(["location": geoPoint])
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! UserVC
+        vc.annotation = sender as? UserAnnotation
+    }
+    
 }
+
 //button func reset() {
 //    remove annotations
 //mapView.addAnnotation(annotation)
@@ -76,3 +82,13 @@ extension ViewController:CLLocationManagerDelegate {
 }
 
 
+
+extension ViewController: MKMapViewDelegate {
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        guard let annotation = view.annotation as? UserAnnotation else { return }
+        performSegue(withIdentifier: "Next", sender: annotation)
+        mapView.deselectAnnotation(annotation, animated: true)
+}
+
+}

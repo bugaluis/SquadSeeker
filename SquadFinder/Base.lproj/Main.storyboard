@@ -178,65 +178,74 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sledge" translatesAutoresizingMaskIntoConstraints="NO" id="6VA-gV-M76">
                                 <rect key="frame" x="45" y="88" width="302" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="187" id="dfa-wj-e6b"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Game:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgM-Nv-ZMh">
-                                <rect key="frame" x="128" y="314" width="88" height="23"/>
+                                <rect key="frame" x="118" y="314" width="88" height="23"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="OBJ-W9-Mri"/>
+                                    <constraint firstAttribute="height" constant="23" id="Aeq-oz-n1E"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K/D:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWI-Uq-7ck">
-                                <rect key="frame" x="128" y="345" width="88" height="23"/>
+                                <rect key="frame" x="118" y="345" width="88" height="23"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="5Ym-Zq-HD6"/>
+                                    <constraint firstAttribute="height" constant="23" id="GOy-ac-NOl"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gamer Tag:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0l-3X-YKE">
-                                <rect key="frame" x="128" y="283" width="88" height="23"/>
+                                <rect key="frame" x="118" y="283" width="88" height="23"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="3fP-sn-uFK"/>
+                                    <constraint firstAttribute="height" constant="23" id="c82-rr-IjE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Console:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoW-Mc-yQU">
-                                <rect key="frame" x="128" y="376" width="88" height="23"/>
+                                <rect key="frame" x="118" y="376" width="88" height="23"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="tiL-MF-6Ap"/>
+                                    <constraint firstAttribute="height" constant="23" id="r9a-Op-LaT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="castle" translatesAutoresizingMaskIntoConstraints="NO" id="TDb-Oi-l0j">
-                                <rect key="frame" x="0.0" y="545" width="190" height="122"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fuze" translatesAutoresizingMaskIntoConstraints="NO" id="yCs-mM-07D">
+                                <rect key="frame" x="0.0" y="394" width="181" height="273"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tx0-4U-olM">
-                                <rect key="frame" x="186" y="545" width="189" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rook" translatesAutoresizingMaskIntoConstraints="NO" id="Tx0-4U-olM">
+                                <rect key="frame" x="177" y="394" width="198" height="273"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.054901960780000002" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="YRj-ne-mgg" firstAttribute="bottom" secondItem="MoW-Mc-yQU" secondAttribute="bottom" constant="268" id="2Dp-dy-c5s"/>
-                            <constraint firstItem="JWI-Uq-7ck" firstAttribute="trailing" secondItem="MoW-Mc-yQU" secondAttribute="trailing" id="IyU-zL-nKA"/>
-                            <constraint firstItem="YRj-ne-mgg" firstAttribute="trailing" secondItem="6VA-gV-M76" secondAttribute="trailing" constant="28" id="Qie-F6-kvO"/>
-                            <constraint firstItem="O0l-3X-YKE" firstAttribute="top" secondItem="6VA-gV-M76" secondAttribute="bottom" constant="8" symbolic="YES" id="UNq-zo-eVT"/>
-                            <constraint firstItem="6VA-gV-M76" firstAttribute="top" secondItem="YRj-ne-mgg" secondAttribute="top" constant="24" id="aEN-sO-RHA"/>
-                            <constraint firstItem="MoW-Mc-yQU" firstAttribute="top" secondItem="JWI-Uq-7ck" secondAttribute="bottom" constant="8" symbolic="YES" id="c0R-1i-1Z3"/>
-                            <constraint firstItem="wgM-Nv-ZMh" firstAttribute="trailing" secondItem="JWI-Uq-7ck" secondAttribute="trailing" id="dk0-an-7kM"/>
-                            <constraint firstItem="wgM-Nv-ZMh" firstAttribute="leading" secondItem="JWI-Uq-7ck" secondAttribute="leading" id="fWD-Kv-vA4"/>
-                            <constraint firstItem="O0l-3X-YKE" firstAttribute="trailing" secondItem="wgM-Nv-ZMh" secondAttribute="trailing" id="gcl-RP-dy7"/>
-                            <constraint firstItem="JWI-Uq-7ck" firstAttribute="leading" secondItem="MoW-Mc-yQU" secondAttribute="leading" id="iOj-OP-ynz"/>
-                            <constraint firstItem="O0l-3X-YKE" firstAttribute="leading" secondItem="wgM-Nv-ZMh" secondAttribute="leading" id="kbJ-9f-GiG"/>
-                            <constraint firstItem="YRj-ne-mgg" firstAttribute="trailing" secondItem="O0l-3X-YKE" secondAttribute="trailing" constant="159" id="o0n-qC-jQW"/>
-                            <constraint firstItem="6VA-gV-M76" firstAttribute="leading" secondItem="YRj-ne-mgg" secondAttribute="leading" constant="45" id="rLC-Dk-gWH"/>
-                            <constraint firstItem="wgM-Nv-ZMh" firstAttribute="top" secondItem="O0l-3X-YKE" secondAttribute="bottom" constant="8" symbolic="YES" id="uRn-g4-qGG"/>
-                            <constraint firstItem="JWI-Uq-7ck" firstAttribute="top" secondItem="wgM-Nv-ZMh" secondAttribute="bottom" constant="8" symbolic="YES" id="uqR-6v-lSh"/>
+                            <constraint firstItem="yCs-mM-07D" firstAttribute="leading" secondItem="Iun-VC-bqo" secondAttribute="leading" id="0eC-nl-cPp"/>
+                            <constraint firstItem="YRj-ne-mgg" firstAttribute="trailing" secondItem="O0l-3X-YKE" secondAttribute="trailing" constant="169" id="8g8-cd-CQU"/>
+                            <constraint firstItem="JWI-Uq-7ck" firstAttribute="leading" secondItem="MoW-Mc-yQU" secondAttribute="leading" id="Cpy-wD-V4f"/>
+                            <constraint firstItem="O0l-3X-YKE" firstAttribute="trailing" secondItem="wgM-Nv-ZMh" secondAttribute="trailing" id="CsD-lX-u3K"/>
+                            <constraint firstItem="O0l-3X-YKE" firstAttribute="top" secondItem="6VA-gV-M76" secondAttribute="bottom" constant="8" symbolic="YES" id="KTj-Ut-Swq"/>
+                            <constraint firstItem="JWI-Uq-7ck" firstAttribute="top" secondItem="wgM-Nv-ZMh" secondAttribute="bottom" constant="8" symbolic="YES" id="R20-vb-dXw"/>
+                            <constraint firstItem="YRj-ne-mgg" firstAttribute="trailing" secondItem="6VA-gV-M76" secondAttribute="trailing" constant="28" id="WiI-cR-aw6"/>
+                            <constraint firstItem="O0l-3X-YKE" firstAttribute="leading" secondItem="YRj-ne-mgg" secondAttribute="leading" constant="118" id="ZZD-U1-nvB"/>
+                            <constraint firstItem="JWI-Uq-7ck" firstAttribute="trailing" secondItem="MoW-Mc-yQU" secondAttribute="trailing" id="Zey-Of-cAq"/>
+                            <constraint firstItem="wgM-Nv-ZMh" firstAttribute="top" secondItem="O0l-3X-YKE" secondAttribute="bottom" constant="8" symbolic="YES" id="d2F-eJ-E0F"/>
+                            <constraint firstItem="Tx0-4U-olM" firstAttribute="leading" secondItem="YRj-ne-mgg" secondAttribute="leading" constant="177" id="gHP-Ho-Oba"/>
+                            <constraint firstItem="MoW-Mc-yQU" firstAttribute="top" secondItem="JWI-Uq-7ck" secondAttribute="bottom" constant="8" symbolic="YES" id="gOu-xw-UCR"/>
+                            <constraint firstItem="yCs-mM-07D" firstAttribute="bottom" secondItem="YRj-ne-mgg" secondAttribute="bottom" id="jtT-Am-UES"/>
+                            <constraint firstItem="wgM-Nv-ZMh" firstAttribute="trailing" secondItem="JWI-Uq-7ck" secondAttribute="trailing" id="lc6-XF-OBU"/>
+                            <constraint firstItem="wgM-Nv-ZMh" firstAttribute="leading" secondItem="JWI-Uq-7ck" secondAttribute="leading" id="nRP-ha-3vy"/>
+                            <constraint firstItem="yCs-mM-07D" firstAttribute="bottom" secondItem="Tx0-4U-olM" secondAttribute="bottom" id="qLu-jB-nSG"/>
+                            <constraint firstItem="yCs-mM-07D" firstAttribute="top" secondItem="Tx0-4U-olM" secondAttribute="top" id="r4F-Ob-GQl"/>
+                            <constraint firstAttribute="trailing" secondItem="Tx0-4U-olM" secondAttribute="trailing" id="ru8-FF-qpI"/>
+                            <constraint firstItem="6VA-gV-M76" firstAttribute="leading" secondItem="YRj-ne-mgg" secondAttribute="leading" constant="45" id="sSe-j9-pmp"/>
+                            <constraint firstItem="Tx0-4U-olM" firstAttribute="top" secondItem="JWI-Uq-7ck" secondAttribute="bottom" constant="26" id="sek-vh-jas"/>
+                            <constraint firstItem="6VA-gV-M76" firstAttribute="top" secondItem="YRj-ne-mgg" secondAttribute="top" constant="24" id="utC-1s-u07"/>
+                            <constraint firstItem="O0l-3X-YKE" firstAttribute="leading" secondItem="wgM-Nv-ZMh" secondAttribute="leading" id="wE3-Vx-2Sf"/>
+                            <constraint firstItem="YRj-ne-mgg" firstAttribute="trailing" secondItem="yCs-mM-07D" secondAttribute="trailing" constant="194" id="yPZ-4k-oAH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YRj-ne-mgg"/>
                     </view>
@@ -288,7 +297,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Rook" width="1080" height="1342"/>
         <image name="Sledge" width="1280" height="720"/>
-        <image name="castle" width="899" height="691"/>
+        <image name="fuze" width="236" height="380"/>
     </resources>
 </document>
