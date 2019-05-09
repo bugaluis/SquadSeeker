@@ -10,14 +10,15 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var slogan: UILabel!
-    @IBOutlet weak var mapview: MKMapView!
+   
+    @IBOutlet weak var mapView: MKMapView!
     
     
     @IBAction func filter(_ sender: UIButton) {
     }
     @IBAction func showAll(_ sender: UIButton) {
     }
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.requestAlwaysAuthorization()
@@ -34,10 +35,10 @@ class ViewController: UIViewController {
     
     //add user annotations
     func createAnnotations(documents: [DocumentSnapshot]) {
-        mapview.removeAnnotations(mapview.annotations)
+        mapView.removeAnnotations(mapView.annotations)
         for document in documents {
             let annotation = UserAnnotation(document: document)
-            mapview.addAnnotation(annotation)
+            mapView.addAnnotation(annotation)
         }
     }
     func watch() {

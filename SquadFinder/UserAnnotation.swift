@@ -12,5 +12,4 @@ class UserAnnotation: NSObject, MKAnnotation  {
     }
     
 } 
-//
 
