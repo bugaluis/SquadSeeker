@@ -75,12 +75,11 @@
                         <outlet property="passwordTextField" destination="8RV-nN-6Jz" id="x8E-tt-Ma4"/>
                         <outlet property="title" destination="aSR-AV-1SL" id="h4S-dz-xJf"/>
                         <outlet property="titleMain" destination="aSR-AV-1SL" id="HKj-Ws-t68"/>
-                        <segue destination="sDT-cr-thg" kind="show" id="fDj-cJ-0sW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmI-bR-YVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="522" y="142"/>
+            <point key="canvasLocation" x="502" y="142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Thy-Cm-kIN">
@@ -91,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JpO-CL-w5a">
-                                <rect key="frame" x="40" y="98" width="295" height="513"/>
+                                <rect key="frame" x="40" y="54" width="295" height="557"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kw9-RK-a24">
                                 <rect key="frame" x="54" y="613" width="99" height="35"/>
@@ -105,7 +104,7 @@
                                 <rect key="frame" x="246" y="610" width="104" height="30"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEx-ej-M6D">
-                                <rect key="frame" x="101" y="64" width="173" height="45"/>
+                                <rect key="frame" x="101" y="20" width="173" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="vXA-rc-2Wl"/>
                                 </constraints>
@@ -147,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qp6-NY-rMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1332" y="141.67916041979012"/>
+            <point key="canvasLocation" x="502" y="-517"/>
         </scene>
         <!--ProfileVC-->
         <scene sceneID="Y6Z-Lf-LgJ">
@@ -158,13 +157,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sledge" translatesAutoresizingMaskIntoConstraints="NO" id="6VA-gV-M76">
-                                <rect key="frame" x="45" y="88" width="302" height="187"/>
+                                <rect key="frame" x="45" y="44" width="302" height="187"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="187" id="dfa-wj-e6b"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Game:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgM-Nv-ZMh">
-                                <rect key="frame" x="118" y="314" width="88" height="23"/>
+                                <rect key="frame" x="118" y="270" width="88" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="Aeq-oz-n1E"/>
                                 </constraints>
@@ -172,7 +171,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K/D:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWI-Uq-7ck">
-                                <rect key="frame" x="118" y="345" width="88" height="23"/>
+                                <rect key="frame" x="118" y="301" width="88" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="GOy-ac-NOl"/>
                                 </constraints>
@@ -180,7 +179,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gamer Tag:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0l-3X-YKE">
-                                <rect key="frame" x="118" y="283" width="88" height="23"/>
+                                <rect key="frame" x="118" y="239" width="88" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="c82-rr-IjE"/>
                                 </constraints>
@@ -188,7 +187,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Console:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoW-Mc-yQU">
-                                <rect key="frame" x="118" y="376" width="88" height="23"/>
+                                <rect key="frame" x="118" y="332" width="88" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="r9a-Op-LaT"/>
                                 </constraints>
@@ -196,10 +195,10 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fuze" translatesAutoresizingMaskIntoConstraints="NO" id="yCs-mM-07D">
-                                <rect key="frame" x="0.0" y="394" width="181" height="273"/>
+                                <rect key="frame" x="0.0" y="350" width="181" height="317"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rook" translatesAutoresizingMaskIntoConstraints="NO" id="Tx0-4U-olM">
-                                <rect key="frame" x="177" y="394" width="198" height="273"/>
+                                <rect key="frame" x="177" y="350" width="198" height="317"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.054901960780000002" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -234,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEn-8c-lPZ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2181.5999999999999" y="141.67916041979012"/>
+            <point key="canvasLocation" x="1369" y="-518"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="esM-ZM-IFC">
@@ -274,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOE-tX-4lf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2182" y="-522"/>
+            <point key="canvasLocation" x="1369" y="142"/>
         </scene>
         <!--App Container View Controller-->
         <scene sceneID="M0z-3Q-cSc">
@@ -298,7 +297,6 @@
                     <navigationItem key="navigationItem" id="lpb-dJ-uNi"/>
                     <connections>
                         <outlet property="labelTest" destination="plb-5a-nGD" id="OGo-v1-09T"/>
-                        <segue destination="K66-Bm-20V" kind="show" id="h0m-p9-Hye"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oCf-5C-cWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
