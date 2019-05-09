@@ -1,23 +1,19 @@
 import UIKit
 import Firebase
 
-class UserVC: UIViewController {
-
-    var userUid: String!
-    var emailTextField: String!
-    var passwordTextField: String!
+class ProfileVC: UIViewController {
     
     var annotation: UserAnnotation!
-
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-
+        
     }
     
-
-
+    
+    
 }

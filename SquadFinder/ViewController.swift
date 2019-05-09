@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! UserVC
+        let vc = segue.destination as! ProfileVC
         vc.annotation = sender as? UserAnnotation
     }
     
