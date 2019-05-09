@@ -20,12 +20,31 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="K66-Bm-20V" kind="relationship" relationship="rootViewController" id="2GB-yP-osX"/>
+                        <segue destination="XBr-Xf-wvg" kind="relationship" relationship="rootViewController" id="GFc-DZ-XSX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qz9-hp-FoD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-313" y="142"/>
+            <point key="canvasLocation" x="-1193" y="142"/>
+        </scene>
+        <!--App Container View Controller-->
+        <scene sceneID="F1C-ET-HtY">
+            <objects>
+                <viewController id="XBr-Xf-wvg" customClass="AppContainerViewController" customModule="SquadFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uU6-jt-2nZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cmk-cx-Tno"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kdR-tK-okq"/>
+                    <connections>
+                        <segue destination="K66-Bm-20V" kind="show" id="tNS-eR-ep1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WiO-W2-2yc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-366" y="142"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Ypy-oE-0ji">
