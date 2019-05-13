@@ -7,8 +7,6 @@ class ViewController: UIViewController {
     
     let locationManager = CLLocationManager()
     
-    
-    
     @IBOutlet weak var slogan: UILabel!
    
     @IBOutlet weak var mapView: MKMapView!
@@ -24,6 +22,8 @@ class ViewController: UIViewController {
         locationManager.requestAlwaysAuthorization()
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
+        
+        mapView.delegate = self
         watch()
     }
     
@@ -57,7 +57,9 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! ProfileVC
         vc.annotation = sender as? UserAnnotation
+        dismiss(animated:true, completion: nil)
     }
+    // the dismiss allows the app to not crash due to the staking up of view controllers since all these view controllers take up memory
     
 }
 
@@ -65,7 +67,7 @@ class ViewController: UIViewController {
 //    remove annotations
 //mapView.addAnnotation(annotation)
 //}
-
+// If we had more time we would have created more users then created a filter search 
 //fbutton unc filterSearch() {
 //    if statement
 //
@@ -81,14 +83,12 @@ extension ViewController:CLLocationManagerDelegate {
     
 }
 
-
-
 extension ViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         guard let annotation = view.annotation as? UserAnnotation else { return }
-        performSegue(withIdentifier: "Next", sender: annotation)
+        performSegue(withIdentifier: "profile", sender: annotation)
         mapView.deselectAnnotation(annotation, animated: true)
 }
-
+    
 }
