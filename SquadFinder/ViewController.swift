@@ -7,8 +7,7 @@ class ViewController: UIViewController {
     
     let locationManager = CLLocationManager()
     
-    @IBOutlet weak var slogan: UILabel!
-   
+
     @IBOutlet weak var mapView: MKMapView!
     
     
@@ -57,7 +56,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! ProfileVC
         vc.annotation = sender as? UserAnnotation
-        dismiss(animated:true, completion: nil)
+//        dismiss(animated:true, completion: nil)
     }
     // the dismiss allows the app to not crash due to the staking up of view controllers since all these view controllers take up memory
     

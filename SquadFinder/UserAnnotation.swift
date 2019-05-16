@@ -4,7 +4,7 @@ import Firebase
 class UserAnnotation: NSObject, MKAnnotation  {
     
     var coordinate: CLLocationCoordinate2D
-    var highScore: Int!
+    var highScore: String!
     var gamerTag: String!
     var topGame: String!
     var gamesConsole: String!
@@ -13,11 +13,15 @@ class UserAnnotation: NSObject, MKAnnotation  {
         let dict = document.data()!
         let geoPoint = dict["location"] as! GeoPoint
         coordinate = CLLocationCoordinate2D(latitude: geoPoint.latitude, longitude: geoPoint.longitude)
-        highScore = dict["highScore"] as? Int
+        highScore = dict["highScore"] as? String
         gamerTag = dict["gamerTag"] as? String
         topGame = dict["topGame"] as? String
         gamesConsole = dict["gamesConsole"] as? String
     
+//        if let highScore = dict["highScore"] as? String {
+//            self.highScore = highScore
+//        }
+//
 //make them variables list them underneath the snapshot eg
     }
     
