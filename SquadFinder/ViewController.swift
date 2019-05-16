@@ -5,6 +5,9 @@ import FirebaseAuth
 
 class ViewController: UIViewController {
     
+    @IBAction func logout(_ sender: Any) {
+        AppManager.shared.logout()
+    }
     let locationManager = CLLocationManager()
     
 
